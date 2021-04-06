@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2941AB;
+  font-family: 'Roboto Slab', serif;
+}
+
+/***********
+ * CIRCLES *
+ ***********/
+.circle-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1ED760;
+  clip-path: circle(38.2% at 100% 20%);
+  z-index:-1;
+}
+
+.circle-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1ED760;
+  clip-path: circle(19.5% at 0 68%);
+  z-index:-2;
+}
+
+.circle-3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1ED760;
+  clip-path: circle(12.1% at 3% 40%);
+  z-index:-1;
+  opacity: 0.2;
+}
+
+/*******
+ * APP *
+ *******/
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 30px 50px;
+  margin: 0 auto;  
+  max-width: 400px;
+}
+
+.header form { 
+  background-color: #333333;
+  padding: 20px 40px;  
+  border-radius: 5px;
+  color: #1ED760;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 1px 1px 15px 0px #000000; 
+  box-shadow: 1px 1px 15px 0px #000000;
+}
+
+.header h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #1ED760;
+}
+
+.header input {
+  width: 220px;
+  font-size: 16px;
+  outline: none;
+}
+
+.header #lyrics {   
+  text-align: center; 
+  color: #fff; 
+}
+
+.header #footer-2 {
+  display: none;
+  color: rgb(151, 148, 148);
+  text-align: center;
+  padding: 50px;
+  margin-top: 50px;
+}
+
+.btn {
+  background-color: rgb(173, 26, 26);
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  -webkit-box-shadow: 1px 1px 15px 0px #000000; 
+  box-shadow: 1px 1px 15px 0px #000000;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: rgb(230, 36, 36);
+}
+
+/************
+ * FOOTER 1 *
+ ************/
+.footer-1 {
+  position: absolute;
+  bottom: 0;
+  left: 47%;
+  transform: translateX(-47%);
+  color: rgb(151, 148, 148);
+  margin: 50px;
+  text-align: center; 
+}
+
+/*****************
+ * MOBILE SCREEN *
+ *****************/
+@media only screen and (max-width: 767px){  
+  .header h1 {
+    color: #6c77ac;
+  }
+}
